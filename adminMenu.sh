@@ -18,14 +18,14 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Create a file system")
-			bash ./filesystem.sh
+	   bash ./filesystem.sh
             ;;
         "Mount the file system")
             bash ./mounting.sh
             ;;
         "Create the backup of the entire disk")
             echo "[Info] wait till we gather all files....."
-            bash ./bacup.sh
+            bash ./backup.sh
             ;;
         "Compress any file from and store it ")
             echo "[Input] Enter the file to Compress:"
